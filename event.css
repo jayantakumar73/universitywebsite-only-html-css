@@ -1,0 +1,52 @@
+@import url(style1.css);
+body
+{
+    background-color: #ddd;
+}
+
+.event-content{
+    border: 3.5px solid #0c8877;
+    margin: 2rem;
+}
+
+.event
+{
+    height: 350px;
+    margin: 5rem 0;
+    box-shadow: 0 0 10px 0 #aaa;
+}
+
+.event-heading{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.innovation .pic-box, .tech .sen-box, .paint .pic-box, .dance .sen-box , .cricket .pic-box , .football .sen-box{
+    float: left;
+    width: 50%;
+}
+
+.innovation .sen-box, .tech .pic-box, .paint .sen-box, .dance .pic-box , .cricket .sen-box , .football .pic-box{
+    float: right;
+    width: 50%;
+}
+
+.event::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.event .pic-box, .event .sen-box{
+    height: 100%;
+    background-color: #fff;
+    user-select: none;
+}
+
+.event img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
